@@ -1,0 +1,95 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo, nav links, and user actions */
+    align-items: center; /* Vertically align items */
+    padding: 20px;
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text color */
+}
+
+/* Logo Styling */
+.navbar img {
+    width: 50px; /* Logo width */
+    height: 50px; /* Logo height */
+    object-fit: contain; /* Maintain aspect ratio of logo */
+}
+
+/* Navigation Links */
+.navbar nav ul {
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal alignment */
+    gap: 20px; /* Spacing between links */
+}
+
+.navbar nav ul li {
+    display: inline-block; /* Ensure list items are inline */
+}
+
+.navbar nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* User Actions Styling */
+.user-actions {
+    display: flex; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    gap: 15px; /* Spacing between buttons */
+}
+
+.welcome-message {
+    font-size: 14px; /* Adjust font size */
+    color: #fff; /* White text */
+}
+
+/* Button Styling (Profile, Logout, Login) */
+.profile-btn, .logout-btn, .login-btn {
+    padding: 8px 20px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded button style */
+    background-color: #FFD700; /* Gold background */
+    color: #000; /* Black text */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.profile-btn:hover, .logout-btn:hover, .login-btn:hover {
+    background-color: #FFC107; /* Slightly darker gold on hover */
+    box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.6); /* Add glow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .navbar nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Adjust spacing for stacked links */
+    }
+
+    .user-actions {
+        flex-direction: column; /* Stack user actions vertically */
+        gap: 10px; /* Adjust spacing for stacked buttons */
+    }
+
+    .navbar img {
+        width: 40px; /* Resize logo for smaller screens */
+        height: 40px; /* Resize logo for smaller screens */
+    }
+}

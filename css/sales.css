@@ -1,0 +1,150 @@
+/* Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    border-bottom: 2px solid #FFD700; /* Gold bottom border */
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #000;
+    background-color: #FFD700;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    padding: 8px 16px;
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-btn:hover {
+    background: #FFC107;
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Sales Data Section */
+.games-offered {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.games-offered h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.games-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Sales Cards */
+.game-item {
+    text-align: center;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.game-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.game-item p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+    border-top: 2px solid #FFD700;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

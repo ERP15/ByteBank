@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/backdrop.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar .logout-btn {
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navbar .logout-btn:hover {
+    background: #FFC107;
+}
+
+/* Content Container */
+.content-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Contact Intro */
+.contact-intro h1 {
+    font-size: 36px;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.contact-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Contact Information */
+.contact-info h2 {
+    font-size: 28px;
+    color: #FFD700;
+    margin: 30px 0 20px;
+}
+
+.info-box p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* Contact Form */
+.contact-form h2 {
+    font-size: 28px;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .submit-btn {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: #FFD700;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+    background: #FFC107;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    margin-top: 50px;
+}
